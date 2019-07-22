@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+
+    <title>Presentation</title>
+</head>
+<body>
+    <!-- Page 1 -->
+    <section id="page-1" class="page">
+        <h1>Welcome to my presentation</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, debitis aliquid? Fugit sunt soluta reiciendis tempore veritatis atque necessitatibus, id ea voluptatum architecto deleniti, asperiores suscipit. Numquam odit non, assumenda excepturi sit vero ut, cum eligendi dolor vel minima incidunt.</p>
+        <div>
+            <a href="#page-2" class="btn btn1">Next Page <i class="fas fa-arrow-circle-down"></i></a>
+        </div>
+    </section>
+    <section id="page-2" class="page">
+        <h1>Welcome to my presentation</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, debitis aliquid? Fugit sunt soluta reiciendis tempore veritatis atque necessitatibus, id ea voluptatum architecto deleniti, asperiores suscipit. Numquam odit non, assumenda excepturi sit vero ut, cum eligendi dolor vel minima incidunt.</p>
+        <div>
+            <a href="#page-1" class="btn btn-dark">Prev Page <i class="fas fa-arrow-circle-up"></i></a>
+            <a href="#page-3" class="btn">Next Page <i class="fas fa-arrow-circle-down"></i></a>
+        </div>
+    </section> 
+    <section id="page-3" class="page">
+        <h1>Welcome to my presentation</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, debitis aliquid? Fugit sunt soluta reiciendis tempore veritatis atque necessitatibus, id ea voluptatum architecto deleniti, asperiores suscipit. Numquam odit non, assumenda excepturi sit vero ut, cum eligendi dolor vel minima incidunt.</p>
+        <div>
+            <a href="#page-2" class="btn btn-dark">Prev Page <i class="fas fa-arrow-circle-up"></i></a>
+            <a href="#page-4" class="btn">Next Page <i class="fas fa-arrow-circle-down"></i></a>
+        </div>
+    </section>
+    <section id="page-4" class="page">
+        <h1>Welcome to my presentation</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, debitis aliquid? Fugit sunt soluta reiciendis tempore veritatis atque necessitatibus, id ea voluptatum architecto deleniti, asperiores suscipit. Numquam odit non, assumenda excepturi sit vero ut, cum eligendi dolor vel minima incidunt.</p>
+        <div>
+            <a href="#page-3" class="btn">Prev Page <i class="fas fa-arrow-circle-up"></i></a>
+        </div>
+    </section>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+    <script>
+    $(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+    </script>
+</body>
+</html>
