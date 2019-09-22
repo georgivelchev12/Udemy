@@ -1,0 +1,39 @@
+@media(min-width:1200px) {
+    .main-login {
+        flex: 4;
+    }
+
+    .main-image {
+        flex: 6;
+    }
+
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow: auto;
+
+    }
+
+    .main-image {
+        display: none;
+    }
+
+    .main-login {
+        justify-content: start;
+        margin-top: 4vh;
+    }
+
+    .signin .logo {
+        margin-bottom: 2vh;
+    }
+
+    .signin .text-input {
+        margin-bottom: 0.7rem;
+
+    }
+
+    #main-footer {
+        padding-top: 1rem;
+    }
+}
